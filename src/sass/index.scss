@@ -1,0 +1,36 @@
+@import './common';
+@import './example';
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  a {
+    max-width: calc(100% / 3);
+    height: 200px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    > div, img {
+      height: 100%;
+    }
+    .info {
+      display: flex;
+    }
+    p {
+      padding-right: 5px;
+      color: black;
+    }
+  }
+}
+
+.load-more {
+  position: fixed;
+  top: 90%;
+  right: 40px;
+  background: burlywood;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
